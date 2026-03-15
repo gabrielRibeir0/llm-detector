@@ -2,9 +2,10 @@
 ## Grupo [Inserir Número do Grupo]
 
 ### Elementos do Grupo
-- Nome 1 (AXXXXX)
-- Nome 2 (AXXXXX)
-- Nome 3 (AXXXXX)
+- Afonso Sousa (PG61506)
+- Daniel Lobo (PG60241)
+- Gabriel Ribeiro (PG60258)
+- Tomás Barbosa (PG60311)
 
 ### Organização do Repositório
 O repositório está organizado da seguinte forma:
