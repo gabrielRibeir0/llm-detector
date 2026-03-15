@@ -1,5 +1,5 @@
 import numpy as np
-from layers import Layer
+from src.layers import Layer
 
 class ActivationLayer(Layer):
     def forward_propagation(self, inputs, training):
