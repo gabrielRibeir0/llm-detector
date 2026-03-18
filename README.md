@@ -1,6 +1,6 @@
 # UC Aprendizagem Profunda — Trabalho Prático Módulo 1
 
-## Grupo 14
+## Grupo MEI-09
 
 ### Elementos do Grupo
 
@@ -23,16 +23,16 @@ Desenvolvimento de modelos de Machine/Deep Learning para classificar textos como
 | `Google` | Texto gerado por modelos Gemma/Gemini |
 | `Meta` | Texto gerado por modelos LLaMA |
 | `OpenAI` | Texto gerado por modelos GPT |
-| `Mistral` | Texto gerado por Mistral-7B ou similares |
+| `Anthropic` | Texto gerado por modelos Claude |
 
 ---
 
 ## Organização do Repositório
 
-```
+```text
 .
 ├── data/
-│   ├── dataset-exemplos.csv       # Dataset de treino principal (formato: ID;Text;Label)
+│   ├── dataset-training.csv       # Dataset de treino principal
 │   └── subm1.csv                  # Dataset de validação fornecido pelo docente (formato: ID;Text)
 │
 ├── src/                           # Framework NumPy implementado de raiz (Tarefa 2)
@@ -43,23 +43,27 @@ Desenvolvimento de modelos de Machine/Deep Learning para classificar textos como
 │   ├── optimizer.py               # Optimizer com SGD + Momentum
 │   └── metrics.py                 # accuracy_score
 │
-├── plots/                         # Gráficos gerados automaticamente pelos notebooks
+├── plots/                         # Gráficos gerados automaticamente pelos notebooks de treino
 │
-├── 1_Treino_Numpy.ipynb           # Treino da DNN NumPy (Tarefa 2)
-├── 2_Treino_PyTorch.ipynb         # Treino do GRU PyTorch (Tarefa 3)
-├── 3_Submissao_Final.ipynb        # Inferência + comparação dos modelos (Avaliação)
+├── 1_Treino_Numpy.ipynb           # Notebook de treino da DNN NumPy (Tarefa 2)
+├── 2_Treino_PyTorch.ipynb         # Notebook de treino do GRU PyTorch (Tarefa 3)
 │
 ├── modelo_numpy_artefactos.pkl    # Modelo NumPy treinado + TF-IDF vectorizer + LabelEncoder
 ├── modelo_pytorch_gru.pth         # Pesos do modelo PyTorch GRU (melhor época por val_loss)
 ├── pytorch_vocab.pkl              # Vocabulário construído para o modelo PyTorch
-└── pytorch_metrics.pkl            # Métricas de avaliação do modelo PyTorch
+│
+└── Subm1/                         # PASTA DE SUBMISSÃO OFICIAL
+    ├── subm1-g9-MEI-A.ipynb       # Notebook de Inferência - Modelo A (NumPy)
+    ├── subm1-g9-MEI-A.csv         # Resultados gerados pelo Modelo A
+    ├── subm1-g9-MEI-B.ipynb       # Notebook de Inferência - Modelo B (PyTorch)
+    └── subm1-g9-MEI-B.csv         # Resultados gerados pelo Modelo B
 ```
 
 ---
 
 ## Modelos Desenvolvidos
 
-### Modelo 1 — NumPy DNN (Tarefa 2, implementação própria)
+### Modelo A — NumPy DNN (Tarefa 2, implementação própria)
 
 Deep Neural Network implementada **de raiz em NumPy**, sem uso de bibliotecas de ML externas.
 
@@ -71,7 +75,7 @@ Deep Neural Network implementada **de raiz em NumPy**, sem uso de bibliotecas de
 
 **Arquitetura:**
 ```
-Input (TF-IDF, ~2500 features)
+Input (TF-IDF, ~5000 features)
   → Dense(256) → ReLU → Dropout(0.4)
   → Dense(128) → ReLU → Dropout(0.3)
   → Dense(64)  → ReLU → Dropout(0.2)
@@ -80,11 +84,11 @@ Input (TF-IDF, ~2500 features)
 
 **Hiperparâmetros:** `epochs=50`, `batch_size=16`, `lr=0.01`, `momentum=0.9`
 
-**Ficheiro gerado:** `modelo_numpy_artefactos.pkl`
+**Ficheiro gerado (já na raiz):** `modelo_numpy_artefactos.pkl`
 
 ---
 
-### Modelo 2 — PyTorch GRU Bidirecional (Tarefa 3)
+### Modelo B — PyTorch GRU Bidirecional (Tarefa 3)
 
 GRU bidirecional com embeddings aprendidos, implementado em **PyTorch**.
 
@@ -107,61 +111,29 @@ Input (token IDs, seq_len=100)
 
 **Hiperparâmetros:** `epochs=30`, `batch_size=16`, `lr=0.001`, `weight_decay=1e-4`
 
-**Ficheiro gerado:** `modelo_pytorch_gru.pth` + `pytorch_vocab.pkl`
+**Ficheiros gerados (já na raiz):** `modelo_pytorch_gru.pth` + `pytorch_vocab.pkl`
 
 ---
 
-## Métricas de Avaliação
-
-Ambos os modelos são avaliados com as seguintes métricas no conjunto de teste:
-
-| Métrica | Descrição |
-|---------|-----------|
-| **Test Loss** | Cross-Entropy no conjunto de teste |
-| **Accuracy** | Proporção de previsões corretas |
-| **Balanced Accuracy** | Accuracy média por classe (robusta a desequilíbrios) |
-| **Macro F1-Score** | Média não ponderada do F1 por classe (métrica principal) |
-| **Weighted F1-Score** | Média ponderada do F1 por classe |
-| **Macro Precision** | Média não ponderada da Precision por classe |
-| **Macro Recall** | Média não ponderada do Recall por classe |
-
-Os notebooks geram ainda automaticamente: curvas de treino/validação, matriz de confusão, F1 por classe e gráfico comparativo entre os dois modelos.
-
----
-
-## Como Executar
+## Como Executar e Correr a Avaliação (Docente)
 
 ### Pré-requisitos
-
 ```bash
 pip install numpy pandas scikit-learn matplotlib torch
 ```
 
-### Ordem de execução
+Os pesos e artefactos pré-treinados (`.pkl` e `.pth`) já se encontram na raiz do repositório, pelo que **não é necessário correr os notebooks de treino novamente.** Para gerar as classificações num novo dataset de teste, basta executar os notebooks presentes na pasta **`Subm1/`**.
 
-```
-1_Treino_Numpy.ipynb   →   gera modelo_numpy_artefactos.pkl
-2_Treino_PyTorch.ipynb →   gera modelo_pytorch_gru.pth + pytorch_vocab.pkl
-3_Submissao_Final.ipynb →  gera resultados.csv
-```
-
-> **Nota:** O notebook 2 e o notebook 3 dependem de `modelo_numpy_artefactos.pkl` para carregar o `LabelEncoder` oficial. O notebook 1 deve sempre ser corrido primeiro.
-
----
-
-## Como Correr a Avaliação (Docente)
-
-1. Abrir o ficheiro **`3_Submissao_Final.ipynb`**.
-2. *(Opcional)* Alterar a variável `PATH_DATASET_TESTE` na primeira célula para apontar para o CSV de validação correto. O formato esperado é `ID;Text` (separador `;`).
+### 1. Avaliar o Modelo A (NumPy)
+1. Abrir o ficheiro **`Subm1/subm1-g9-MEI-A.ipynb`**.
+2. *(Opcional)* Se o nome ou caminho do ficheiro de validação for diferente, alterar a variável `PATH_DATASET_TESTE`. O formato esperado é CSV com separador `;` e colunas `ID;Text`.
 3. Clicar em **"Run All"**.
-4. O resultado será gerado no ficheiro **`resultados.csv`** com colunas:
+4. O resultado será gerado e guardado como **`Subm1/subm1-g9-MEI-A.csv`**, contendo as colunas `ID;Text;Labels`.
 
-| Coluna | Descrição |
-|--------|-----------|
-| `ID` | Identificador do exemplo |
-| `Text` | Texto original |
-| `Predict_Numpy_DNN` | Previsão do modelo NumPy |
-| `Predict_PyTorch_GRU` | Previsão do modelo PyTorch GRU |
+### 2. Avaliar o Modelo B (PyTorch)
+1. Abrir o ficheiro **`Subm1/subm1-g9-MEI-B.ipynb`**.
+2. *(Opcional)* Se o nome ou caminho do ficheiro de validação for diferente, alterar a variável `PATH_DATASET_TESTE`.
+3. Clicar em **"Run All"**.
+4. O resultado será gerado e guardado como **`Subm1/subm1-g9-MEI-B.csv`**, contendo as colunas `ID;Text;Labels`.
 
-
-
+> **Nota técnica:** Ambos os notebooks da pasta `Subm1` utilizam o `LabelEncoder` guardado em `modelo_numpy_artefactos.pkl` (na pasta raiz) para garantir o mapeamento rigoroso e uniforme das classes em ambos os modelos.
