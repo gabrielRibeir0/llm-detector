@@ -122,7 +122,7 @@ Input (token IDs, seq_len=100)
 pip install numpy pandas scikit-learn matplotlib torch
 ```
 
-Os pesos e artefactos pré-treinados (`.pkl` e `.pth`) já se encontram na raiz do repositório, pelo que **não é necessário correr os notebooks de treino novamente.** Para gerar as classificações num novo dataset de teste, basta executar os notebooks presentes na pasta **`Subm1/`**.
+Os pesos e artefactos pré-treinados (`.pkl` e `.pth`) não se encontram na raiz do repositório por serem superiores a 100MB, para tal, executar o `1_Treino_Numpy.ipynb` (Run All) e o `2_Treino_PyTorch.ipynb` , pelo que **não é necessário correr os notebooks de treino novamente.** Para gerar as classificações num novo dataset de teste, basta executar os notebooks presentes na pasta **`Subm1/`**.
 
 ### 1. Avaliar o Modelo A (NumPy)
 1. Abrir o ficheiro **`Subm1/subm1-g9-MEI-A.ipynb`**.
