@@ -23,7 +23,10 @@ Desenvolvimento de modelos de Machine/Deep Learning para classificar textos como
 | `Google` | Texto gerado por modelos Gemma/Gemini |
 | `Meta` | Texto gerado por modelos LLaMA |
 | `OpenAI` | Texto gerado por modelos GPT |
-| `Anthropic` | Texto gerado por modelos Claude |
+| `Mistral` | Texto gerado por modelos da família Mistral |
+
+> Nota: no dataset atualmente incluído no repositório, não existem ainda exemplos rotulados como `Mistral`.
+> Enquanto esses dados não forem recolhidos, os notebooks assinalam esta lacuna e usam `Anthropic` como substituto temporário para manter o treino multi-classe estável.
 
 ---
 
@@ -63,15 +66,16 @@ Desenvolvimento de modelos de Machine/Deep Learning para classificar textos como
 
 ## Modelos Desenvolvidos
 
-### Modelo A — NumPy DNN (Tarefa 2, implementação própria)
+### Modelo A — NumPy DNN + Baseline Logístico (Tarefa 2, implementação própria)
 
-Deep Neural Network implementada **de raiz em NumPy**, sem uso de bibliotecas de ML externas.
+Deep Neural Network e baseline de Regressão Logística implementados **de raiz em NumPy**, sem uso de bibliotecas de ML/DL externas no pipeline da Tarefa 2.
 
 **Pipeline:**
 1. Limpeza de texto (lowercase, remoção de HTML e caracteres especiais)
-2. Extração de features com **TF-IDF** (até 5000 features, stop words inglesas removidas)
-3. Divisão treino/teste estratificada (80/20)
-4. Treino da DNN com backpropagation manual
+2. Extração de features com **TF-IDF próprio** (até 5000 features)
+3. Divisão estratificada **train/val/test (70/15/15)**
+4. Treino da DNN com backpropagation manual, Dropout, momentum e early stopping
+5. Treino adicional de baseline logístico em NumPy para comparação
 
 **Arquitetura:**
 ```
@@ -121,6 +125,17 @@ Input (token IDs, seq_len=100)
 ```bash
 pip install numpy pandas scikit-learn matplotlib torch
 ```
+
+### Construção dos Datasets (Tarefa 1)
+
+O projeto usa datasets em inglês na pasta `data/`, com estrutura tabular (`ID;Text;Label`):
+
+- `data/dataset-training.csv`
+- `data/dataset-training-final.csv`
+- `data/dataset-exemplos.csv`
+- `data/subm1.csv` (validação externa para submissão)
+
+Recomendação para fechar integralmente a Tarefa 1: documentar no relatório final as fontes originais (Kaggle/Hugging Face/APIs) e respetivo processo de limpeza/normalização para cada classe.
 
 Os pesos e artefactos pré-treinados (`.pkl` e `.pth`) não se encontram na raiz do repositório por serem superiores a 100MB, para tal, executar o `1_Treino_Numpy.ipynb` (Run All) e o `2_Treino_PyTorch.ipynb` , pelo que **não é necessário correr os notebooks de treino novamente.** Para gerar as classificações num novo dataset de teste, basta executar os notebooks presentes na pasta **`Subm1/`**.
 
