@@ -12762,7 +12762,9 @@ D1-12736;The cell membrane, also known as the plasma membrane, is primarily comp
 D1-12737;The amount of solute dissolved in a supersaturated solution exceeds the solubility limit of the solvent at a given temperature and pressure. This means that the solution contains more solute than it would normally be able to dissolve under equilibrium conditions. Supersaturation is typically achieved by dissolving the solute at a higher temperature and then cooling the solution slowly without allowing the excess solute to precipitate. Such solutions are unstable, and any disturbance can cause the excess solute to crystallize or precipitate out.;OpenAI
 D1-12738;The biggest risk associated with using nuclear energy is the potential for catastrophic accidents, such as reactor meltdowns, which can release harmful radioactive materials into the environment. Incidents like Chernobyl and Fukushima highlight the dangers of equipment failure, human error, or natural disasters. Additionally, the long-term management of nuclear waste poses significant challenges, as it remains hazardous for thousands of years and requires secure storage. While nuclear energy is a low-carbon power source, these risks necessitate stringent safety measures and careful oversight to prevent environmental and human harm.;OpenAI
 D1-12739;"When boron-10 absorbs a neutron, it undergoes a nuclear reaction that typically results in the emission of an alpha particle (a helium-4 nucleus) and a lithium-7 nucleus. This reaction is written as:
+
 Boron-10 + neutron → Lithium-7 + Alpha particle
+
 This process is highly significant in neutron capture applications, such as in boron neutron capture therapy (BNCT) for cancer treatment and in neutron detection systems. The reaction releases a significant amount of energy, which is utilized in these applications.";OpenAI
 D1-12740;Bromine trifluoride (BrF3) can undergo reduction, leading to two possible products depending on the extent of the reduction. The first possible product is bromine monofluoride (BrF), which forms when BrF3 is partially reduced. The second possible product is elemental bromine (Br2), which results from complete reduction of BrF3. The specific product depends on the reducing agent and reaction conditions. BrF3 acts as a strong oxidizing agent due to the high electronegativity of fluorine and the oxidation state of bromine in the compound.;OpenAI
 D1-12741;Nuclear equations for radioactive decay are written using symbols that represent the nuclei of atoms, including their atomic number (protons) and mass number (protons plus neutrons). The parent nucleus (the original atom) is shown on the left side of the equation, while the daughter nucleus (the resulting atom) and emitted particles are on the right. Common particles include alpha particles (helium nuclei), beta particles (electrons or positrons), and gamma rays (high-energy photons). Conservation laws, such as the conservation of mass number and atomic number, are applied to ensure the equation is balanced.;OpenAI
@@ -17887,48 +17889,48 @@ D1-17855;Fossil fuels, such as coal, oil, and natural gas, are mixtures of hydro
 D1-17856;A property that depends on the amount of matter in a sample is called an extensive property.;Anthropic
 D1-17857;The membrane that bounds the middle ear on its exterior is the tympanic membrane, also known as the eardrum.;Anthropic
 D1-17858;Some products contain iron filings that will react with air to release chemical energy in the form of heat.;Anthropic
-D1-17859;;Anthropic
-D1-17860;;Anthropic
-D1-17861;;Anthropic
-D1-17862;;Anthropic
-D1-17863;;Anthropic
-D1-17864;;Anthropic
-D1-17865;;Anthropic
-D1-17866;;Anthropic
-D1-17867;;Anthropic
-D1-17868;;Anthropic
-D1-17869;;Anthropic
-D1-17870;;Anthropic
-D1-17871;;Anthropic
-D1-17872;;Anthropic
-D1-17873;;Anthropic
-D1-17874;;Anthropic
-D1-17875;;Anthropic
-D1-17876;;Anthropic
-D1-17877;;Anthropic
-D1-17878;;Anthropic
-D1-17879;;Anthropic
-D1-17880;;Anthropic
-D1-17881;;Anthropic
-D1-17882;;Anthropic
-D1-17883;;Anthropic
-D1-17884;;Anthropic
-D1-17885;;Anthropic
-D1-17886;;Anthropic
-D1-17887;;Anthropic
-D1-17888;;Anthropic
-D1-17889;;Anthropic
-D1-17890;;Anthropic
-D1-17891;;Anthropic
-D1-17892;;Anthropic
-D1-17893;;Anthropic
-D1-17894;;Anthropic
-D1-17895;;Anthropic
-D1-17896;;Anthropic
-D1-17897;;Anthropic
-D1-17898;;Anthropic
-D1-17899;;Anthropic
-D1-17900;;Anthropic
+D1-17859;The protective substance that covers the skin of most reptiles is called scales. Scales are made of a protein called keratin and provide protection, waterproofing, and in some cases camouflage for the reptile.;Anthropic
+D1-17860;The weather phenomenon caused by strong warm updrafts from heated ground is called a convection current. These updrafts of warm air create cumulus clouds and can lead to the development of thunderstorms.;Anthropic
+D1-17861;The major fuel for the brain is glucose, a simple carbohydrate. The brain relies on a constant supply of glucose to function properly, as it is the primary energy source for the brain's neurons.;Anthropic
+D1-17862;Hepatitis B is a viral infection that primarily affects the liver. It can cause inflammation and damage to the liver, leading to a range of symptoms and potential long-term complications.;Anthropic
+D1-17863;In the radiative zone of the Sun, light particles called photons can only travel a few millimeters before they hit another particle. This is due to the high density and opacity of the plasma in this region, which scatters the photons.;Anthropic
+D1-17864;After many experiments provide results supporting a hypothesis, the hypothesis becomes a theory. A theory is a well-substantiated explanation of some aspect of the natural world that is based on a body of knowledge that has been repeatedly confirmed through observation and experimentation.;Anthropic
+D1-17865;Sound waves are the type of waves that can travel through liquids, solids, and air. Sound waves are mechanical waves that propagate through the vibration of particles in the medium.;Anthropic
+D1-17866;Organisms that eat many different types of food are called generalists. The red-winged blackbird is an example of a generalist, as it feeds on a variety of plant and animal matter.;Anthropic
+D1-17867;The rate at which chemical reactions vary greatly in terms of speed. Some reactions, like the bursting into flame of a lit match, happen very quickly, while the formation of fossil fuels from organic matter can take millions of years.;Anthropic
+D1-17868;The best room in the home to start saving water is the bathroom. Simple water-saving measures, such as using low-flow showerheads and faucets, can significantly reduce water consumption in the bathroom.;Anthropic
+D1-17869;The force of attraction between fundamental particles called quarks is called the strong nuclear force. This is one of the four fundamental forces in nature, along with gravity, electromagnetism, and the weak nuclear force.;Anthropic
+D1-17870;Abnormal electrical activity in the brain is the cause of the disease epilepsy, which is associated with seizures. Epilepsy is a neurological disorder characterized by recurrent and unprovoked seizures.;Anthropic
+D1-17871;Because atoms are always electrically neutral, for each added proton, one electron is also added. This ensures that the overall charge of an atom remains neutral, with the number of protons and electrons being equal.;Anthropic
+D1-17872;Electromagnetic waves are created by the oscillation of electric and magnetic fields. This oscillation generates a wave that can propagate through space and can be used for various applications, such as in radio, television, and wireless communication.;Anthropic
+D1-17873;The axial skeleton, which forms the vertical, central axis of the body, also serves to protect the lungs. The bones of the chest, including the ribs and sternum, provide a protective structure for the lungs and other vital organs in the thoracic cavity.;Anthropic
+D1-17874;An object that orbits a larger object is called a satellite. Satellites can be natural, like the Moon orbiting the Earth, or artificial, such as satellites launched by humans for various purposes.;Anthropic
+D1-17875;When atoms gain or lose electrons, they form ions. Ions are atoms or molecules that have an unequal number of protons and electrons, resulting in a net positive or negative charge.;Anthropic
+D1-17876;Asthma affects the bronchioles, which are the tiny branches into which the bronchi are divided. These small airways become inflamed and constricted, making it difficult for air to flow in and out of the lungs.;Anthropic
+D1-17877;The difference between aldehydes and ketones is the placement of the carbonyl group within the molecule. In aldehydes, the carbonyl group is at the end of the carbon chain, while in ketones, the carbonyl group is located within the carbon chain.;Anthropic
+D1-17878;A plane mirror has a flat reflective surface and forms only virtual images. Virtual images are not actual images formed by the reflection of light, but rather the perception of an image behind the mirror.;Anthropic
+D1-17879;The type of cell that has a negative anode and a positive cathode is a galvanic cell, or a battery. In a galvanic cell, the chemical reactions that occur at the anode and cathode generate an electrical potential difference, which can be used to power electrical devices.;Anthropic
+D1-17880;The type of mining used to recover ores that are deeper into the Earth's surface is called underground mining. In this method, shafts and tunnels are dug into the Earth to access the mineral deposits that are located at greater depths.;Anthropic
+D1-17881;The unequal distribution of electrons in a water molecule, caused by the oxygen atom pulling the electrons away from the hydrogen atoms, is called polarity. This polarity gives water its unique properties, such as its ability to act as a solvent and its surface tension.;Anthropic
+D1-17882;Structures that are similar in unrelated organisms are called analogous structures. These structures have similar functions but are not derived from a common evolutionary ancestor, unlike homologous structures.;Anthropic
+D1-17883;"The metabolic process by which cells obtain energy by ""burning";Anthropic
+D1-17884;Dust, water vapor, and other small particles in the atmosphere weakly scatter visible light, causing the sky to appear blue on clear days and giving rise to other atmospheric optical effects.;Anthropic
+D1-17885;Photoautotrophs, such as plants, algae, and some bacteria, use sunlight and carbon from carbon dioxide to synthesize chemical energy in the form of carbohydrates through the process of photosynthesis.;Anthropic
+D1-17886;Electrochemical processes, such as redox reactions and the movement of ions, involve a transfer of electrons between the wire (electrode) and the solution (electrolyte) in an electrochemical cell.;Anthropic
+D1-17887;Disturbances in the development of the nervous system can lead to various neurological and developmental disorders, such as autism, cerebral palsy, and intellectual disabilities.;Anthropic
+D1-17888;The nucleus of an atom is primarily composed of protons and neutrons.;Anthropic
+D1-17889;In mammalian lungs, the alveoli, which are tiny air sacs, increase the surface area for gas exchange, facilitating the efficient transfer of oxygen and carbon dioxide between the air and the bloodstream.;Anthropic
+D1-17890;The process by which some solids transition directly into gases is called sublimation, and it occurs when the vapor pressure of the solid is greater than the surrounding pressure.;Anthropic
+D1-17891;In the case of air columns, the larger the air column, the lower the frequency of the sound it produces.;Anthropic
+D1-17892;The type of succession that happens after the destruction of a habitat is called primary succession, where the ecosystem is rebuilt from the ground up, starting with pioneer species.;Anthropic
+D1-17893;An extremely severe food allergy reaction is called anaphylaxis, a life-threatening condition that can cause a rapid drop in blood pressure, difficulty breathing, and other potentially fatal symptoms.;Anthropic
+D1-17894;Magnetism produced by electricity is called electromagnetism, and it is the basis for many electrical devices and technologies, such as electric motors and generators.;Anthropic
+D1-17895;Meristematic tissue is a type of plant tissue consisting of undifferentiated cells that can continue to divide and differentiate, allowing for growth and development.;Anthropic
+D1-17896;Covalent bonds form because they give atoms a more stable arrangement of electrons, with the sharing of electrons between atoms resulting in a lower overall energy state.;Anthropic
+D1-17897;When waves are reflected at the same angle as the angle of incidence, it is called specular reflection.;Anthropic
+D1-17898;California leads all U.S. states in producing geothermal energy, with a significant amount of its electricity generation coming from geothermal sources.;Anthropic
+D1-17899;A wedge is a type of simple machine that consists of two inclined planes, and it is commonly used to split, lift, or hold objects in place.;Anthropic
+D1-17900;A funnel-shaped cloud of whirling high winds is known as a tornado.;Anthropic
 D1-17901;Compounds that are capable of accepting electrons, such as O2 or F2, are called oxidizers because they readily release oxygen and accept electrons to form a chemical bond. This process is crucial in various chemical reactions, including combustion, where fuel molecules react with oxidizers to produce energy.;Meta
 D1-17902;Elevation is the height above or below sea level, measured in meters or feet. It is an important geographical concept used in mapping and geographic information systems (GIS) to represent the spatial distribution of features on Earth's surface.;Meta
 D1-17903;Viscosity in long-chain hydrocarbons is relatively high due to the strong intermolecular forces between molecules. This characteristic makes them useful as lubricants, but also affects their flow and diffusion rates.;Meta
