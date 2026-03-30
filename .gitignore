@@ -8,3 +8,5 @@ __pycache__/
 modelo_numpy_artefactos.pkl
 pytorch_vocab.pkl
 modelo_pytorch_gru.pth
+
+*.pt
