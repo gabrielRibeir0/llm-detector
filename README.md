@@ -37,6 +37,8 @@
 │
 ├── plots/                            # Alguns gráficos gerados pelos notebooks
 │
+├── prompts/                          # Prompts usados para apresentação no relatório
+│
 ├── Subm1/                            # Submissão 1
 ├── Subm2/                            # Submissão 2
 ├── Subm3/                            # Submissão 3
