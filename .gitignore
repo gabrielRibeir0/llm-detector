@@ -1,12 +1,10 @@
 # elimina .vscode
 .vscode/
+.DS_Store
 
 # elimina pycache
 __pycache__/
 
-# elimina arquivos de artefactos
-modelo_numpy_artefactos.pkl
-pytorch_vocab.pkl
-modelo_pytorch_gru.pth
-
 *.pt
+*.pkl
+*.pth
